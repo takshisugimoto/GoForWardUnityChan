@@ -5,6 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - audioClip: {fileID: 8300000, guid: eb746f9898cb140aebd1c7ea505ae93d, type: 3}
+  - CubePrefab: {fileID: 1959478022387628, guid: 30ffdaf7915af44c5bf606eabf7c6b44,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

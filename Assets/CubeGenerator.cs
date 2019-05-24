@@ -25,10 +25,8 @@ public class CubeGenerator : MonoBehaviour {
 
 
 
-
 	// Use this for initialization
 	void Start () {
-
 
 
 
@@ -54,6 +52,10 @@ public class CubeGenerator : MonoBehaviour {
 		}
 
 	}
+
+		
+		
+
 }
 
 

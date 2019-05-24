@@ -24,11 +24,12 @@ public class Sound : MonoBehaviour {
 
 	public void OnCollisionEnter2D (Collision2D collision) {
 		//groundタグとCubePrefabが衝突時に音を鳴らす
-		if (collision.gameObject.tag == "ground" || collision.gameObject.tag == "CubePrefab") {
-			gameObject.GetComponent<AudioSource>().PlayOneShot (audioClip);
+		if (collision.gameObject.tag == "CubePrefab" ) {
+			gameObject.GetComponent<AudioSource> ().PlayOneShot (audioClip);
+			Debug.Log ("Enter" + collision.gameObject.name);
 		}
-		}
+	
 	}
-			
+}
 	
 	
