@@ -14,7 +14,6 @@ public class Sound : MonoBehaviour {
 		audioSource = GetComponent<AudioSource> ();
 
 
-
 	}
 	
 	// Update is called once per frame
@@ -24,12 +23,12 @@ public class Sound : MonoBehaviour {
 
 	public void OnCollisionEnter2D (Collision2D collision) {
 		//groundタグとCubePrefabが衝突時に音を鳴らす
-		if (collision.gameObject.tag == "CubePrefab" ) {
+		if (collision.gameObject.tag == "CubePrefab" || collision.gameObject.tag == "ground" ) {
 			gameObject.GetComponent<AudioSource> ().PlayOneShot (audioClip);
-			Debug.Log ("Enter" + collision.gameObject.name);
 		}
-	
+			
 	}
+
 }
 	
 	
